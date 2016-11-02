@@ -22,7 +22,9 @@ public class DataServlet extends HttpServlet {
 			dm.setName("Sun Jiawei");
 			dm.setMoney(String.valueOf(timestamp));
 			Gson gson = new Gson();
+			response.setContentType("application/json");
 			response.setCharacterEncoding("UTF-8");
+			response.setHeader("Access-Control-Allow-Origin", "*");
 			response.getWriter().print(gson.toJson(dm));
 			response.getWriter().flush();
 			response.getWriter().close();
