@@ -9,6 +9,15 @@
   <servlet-mapping>
   	<servlet-name>getJson</servlet-name>
   	<url-pattern>/</url-pattern>
-  </servlet-mapping>  
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>cities</servlet-name>
+  	<servlet-class>cn.jsutils.servlet.CityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cities</servlet-name>
+  	<url-pattern>/cities</url-pattern>
+  </servlet-mapping>
   
 </web-app>
